@@ -12,7 +12,7 @@
 #import "Comment.h"
 
 @interface DataSource ()
-    @property (nonatomic, strong) NSArray *mediaItems;
+    @property (nonatomic, strong) NSMutableArray *mediaItems;
 @end
 
 @implementation DataSource
@@ -64,6 +64,12 @@
         
         self.mediaItems = randomMediaItems;
     }
+
+- (void) deleteMediaItemAtIndex:(NSInteger) index{
+   // NSMutableArray *array = [NSMutableArray arrayWithArray:self.mediaItems];
+    [self.mediaItems removeObjectAtIndex:index];
+   // self.mediaItems = [array copy];
+}
 
     - (User *) randomUser {
         User *user = [[User alloc] init];

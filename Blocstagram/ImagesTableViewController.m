@@ -91,7 +91,7 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         //[self.images removeObjectAtIndex:0];
-        //NSArray *array = [DataSource sharedInstance].mediaItems;
+        [[DataSource sharedInstance] deleteMediaItemAtIndex:indexPath.row];
         
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
