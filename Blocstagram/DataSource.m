@@ -66,9 +66,7 @@
     }
 
 - (void) deleteMediaItemAtIndex:(NSInteger) index{
-   // NSMutableArray *array = [NSMutableArray arrayWithArray:self.mediaItems];
     [self.mediaItems removeObjectAtIndex:index];
-   // self.mediaItems = [array copy];
 }
 
     - (User *) randomUser {

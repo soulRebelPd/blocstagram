@@ -29,6 +29,7 @@
 		04ED7B9F1AA0CE3000D36E0C /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7B9E1AA0CE3000D36E0C /* Media.m */; };
 		04ED7BA21AA0CEDF00D36E0C /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7BA11AA0CEDF00D36E0C /* Comment.m */; };
 		04ED7BA51AA0D01D00D36E0C /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7BA41AA0D01D00D36E0C /* DataSource.m */; };
+		04ED7BA81AA11E4600D36E0C /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7BA71AA11E4600D36E0C /* MediaTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		04ED7BA11AA0CEDF00D36E0C /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		04ED7BA31AA0D01D00D36E0C /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
 		04ED7BA41AA0D01D00D36E0C /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		04ED7BA61AA11E4600D36E0C /* MediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTableViewCell.h; sourceTree = "<group>"; };
+		04ED7BA71AA11E4600D36E0C /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				04ED7BA11AA0CEDF00D36E0C /* Comment.m */,
 				04ED7BA31AA0D01D00D36E0C /* DataSource.h */,
 				04ED7BA41AA0D01D00D36E0C /* DataSource.m */,
+				04ED7BA61AA11E4600D36E0C /* MediaTableViewCell.h */,
+				04ED7BA71AA11E4600D36E0C /* MediaTableViewCell.m */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 			files = (
 				04ED7BA21AA0CEDF00D36E0C /* Comment.m in Sources */,
 				04ED7B9F1AA0CE3000D36E0C /* Media.m in Sources */,
+				04ED7BA81AA11E4600D36E0C /* MediaTableViewCell.m in Sources */,
 				04ED7BA51AA0D01D00D36E0C /* DataSource.m in Sources */,
 				04ED7B9C1AA0CDEE00D36E0C /* User.m in Sources */,
 				04ED7B621AA0B5BB00D36E0C /* ViewController.m in Sources */,
