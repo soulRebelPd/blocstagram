@@ -160,13 +160,9 @@
 
 #pragma mark - UIScrollViewDelegate
 
-- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     [self infiniteScrollIfNecessary];
 }
-
-
-
-
 
 
 /*
