@@ -18,7 +18,6 @@
 @interface ImagesTableViewController () <MediaTableViewCellDelegate, UIViewControllerTransitioningDelegate>
 
 @property (nonatomic, weak) UIImageView *lastTappedImageView;
-
 @end
 
 
@@ -210,6 +209,10 @@
         UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
         [self presentViewController:activityVC animated:YES completion:nil];
     }
+}
+
+- (void) cell:(MediaTableViewCell *)cell didTwoFingerTapView:(UIImageView *)imageView {
+    [[DataSource sharedInstance] downloadImageForMediaItem:cell.mediaItem];
 }
 
 @end
