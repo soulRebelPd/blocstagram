@@ -21,7 +21,7 @@
 @property (nonatomic, assign) BOOL isLoadingOlderItems;
 @property (nonatomic, strong) NSString *accessToken;
 @property (nonatomic, assign) BOOL thereAreNoMoreOlderMessages;
-@property (nonatomic, strong) AFHTTPRequestOperationManager *instagramOperationManager;
+//@property (nonatomic, strong) AFHTTPRequestOperationManager *instagramOperationManager;
 
 @end
 

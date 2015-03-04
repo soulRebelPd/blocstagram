@@ -8,6 +8,7 @@
 
 #import "MediaFullScreenViewController.h"
 #import "Media.h"
+#import "ActivityViewController.h"
 
 @interface MediaFullScreenViewController () <UIScrollViewDelegate>
 
@@ -71,7 +72,9 @@
 }
 
 -(void) buttonClick: (UIButton *)sender {
+    ActivityViewController *controller = [[ActivityViewController alloc] initWithActivityItems:@[self.media.image] applicationActivities:nil];
     
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (void) viewWillLayoutSubviews {
