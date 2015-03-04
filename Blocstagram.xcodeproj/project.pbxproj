@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04781C031AA6608B002BEC5E /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04781C021AA6608B002BEC5E /* MediaFullScreenViewController.m */; };
+		04781C091AA670A0002BEC5E /* MediaFullScreenAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04781C081AA670A0002BEC5E /* MediaFullScreenAnimator.m */; };
 		04ED7B5C1AA0B5BB00D36E0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7B5B1AA0B5BB00D36E0C /* main.m */; };
 		04ED7B5F1AA0B5BB00D36E0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7B5E1AA0B5BB00D36E0C /* AppDelegate.m */; };
 		04ED7B621AA0B5BB00D36E0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7B611AA0B5BB00D36E0C /* ViewController.m */; };
@@ -31,6 +33,7 @@
 		04ED7BA51AA0D01D00D36E0C /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7BA41AA0D01D00D36E0C /* DataSource.m */; };
 		04ED7BA81AA11E4600D36E0C /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7BA71AA11E4600D36E0C /* MediaTableViewCell.m */; };
 		04ED7BAB1AA5FAE900D36E0C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7BAA1AA5FAE900D36E0C /* LoginViewController.m */; };
+		B15735B020EA93AC61A03B6C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 480E1020554D73D97D15A548 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04781C011AA6608B002BEC5E /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
+		04781C021AA6608B002BEC5E /* MediaFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenViewController.m; sourceTree = "<group>"; };
+		04781C071AA670A0002BEC5E /* MediaFullScreenAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenAnimator.h; sourceTree = "<group>"; };
+		04781C081AA670A0002BEC5E /* MediaFullScreenAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenAnimator.m; sourceTree = "<group>"; };
 		04ED7B561AA0B5BB00D36E0C /* Blocstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ED7B5A1AA0B5BB00D36E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04ED7B5B1AA0B5BB00D36E0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +88,9 @@
 		04ED7BA71AA11E4600D36E0C /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCell.m; sourceTree = "<group>"; };
 		04ED7BA91AA5FAE900D36E0C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		04ED7BAA1AA5FAE900D36E0C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0EBE4C69DC9B7716EE16FD9E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		480E1020554D73D97D15A548 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E3A8E83F0CCC174067EC4B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15735B020EA93AC61A03B6C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,12 +112,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00B7E9705F595E687437D3CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4E3A8E83F0CCC174067EC4B /* Pods.debug.xcconfig */,
+				0EBE4C69DC9B7716EE16FD9E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		04ED7B4D1AA0B5BA00D36E0C = {
 			isa = PBXGroup;
 			children = (
 				04ED7B581AA0B5BB00D36E0C /* Blocstagram */,
 				04ED7B721AA0B5BB00D36E0C /* BlocstagramTests */,
 				04ED7B571AA0B5BB00D36E0C /* Products */,
+				00B7E9705F595E687437D3CF /* Pods */,
+				12797A439F062A0D4BD57AB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +167,10 @@
 				04ED7BA71AA11E4600D36E0C /* MediaTableViewCell.m */,
 				04ED7BA91AA5FAE900D36E0C /* LoginViewController.h */,
 				04ED7BAA1AA5FAE900D36E0C /* LoginViewController.m */,
+				04781C011AA6608B002BEC5E /* MediaFullScreenViewController.h */,
+				04781C021AA6608B002BEC5E /* MediaFullScreenViewController.m */,
+				04781C071AA670A0002BEC5E /* MediaFullScreenAnimator.h */,
+				04781C081AA670A0002BEC5E /* MediaFullScreenAnimator.m */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -192,6 +218,14 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		12797A439F062A0D4BD57AB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				480E1020554D73D97D15A548 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04ED7B791AA0B5BB00D36E0C /* Build configuration list for PBXNativeTarget "Blocstagram" */;
 			buildPhases = (
+				E06C7B5EF4DD4911FFCBE701 /* Check Pods Manifest.lock */,
 				04ED7B521AA0B5BB00D36E0C /* Sources */,
 				04ED7B531AA0B5BB00D36E0C /* Frameworks */,
 				04ED7B541AA0B5BB00D36E0C /* Resources */,
+				88419F4CC32A9DF1F6B9F5C8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,6 +333,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88419F4CC32A9DF1F6B9F5C8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E06C7B5EF4DD4911FFCBE701 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04ED7B521AA0B5BB00D36E0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -309,8 +378,10 @@
 				04ED7BAB1AA5FAE900D36E0C /* LoginViewController.m in Sources */,
 				04ED7B9C1AA0CDEE00D36E0C /* User.m in Sources */,
 				04ED7B621AA0B5BB00D36E0C /* ViewController.m in Sources */,
+				04781C031AA6608B002BEC5E /* MediaFullScreenViewController.m in Sources */,
 				04ED7B5F1AA0B5BB00D36E0C /* AppDelegate.m in Sources */,
 				04ED7B5C1AA0B5BB00D36E0C /* main.m in Sources */,
+				04781C091AA670A0002BEC5E /* MediaFullScreenAnimator.m in Sources */,
 				04ED7B811AA0B69000D36E0C /* ImagesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +504,7 @@
 		};
 		04ED7B7A1AA0B5BB00D36E0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E3A8E83F0CCC174067EC4B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Blocstagram/Info.plist;
@@ -443,6 +515,7 @@
 		};
 		04ED7B7B1AA0B5BB00D36E0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EBE4C69DC9B7716EE16FD9E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Blocstagram/Info.plist;
