@@ -11,6 +11,7 @@
 #import "Media.h"
 #import "Comment.h"
 #import "LoginViewController.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface DataSource () {
     NSMutableArray *_mediaItems;
@@ -20,6 +21,8 @@
 @property (nonatomic, assign) BOOL isLoadingOlderItems;
 @property (nonatomic, strong) NSString *accessToken;
 @property (nonatomic, assign) BOOL thereAreNoMoreOlderMessages;
+@property (nonatomic, strong) AFHTTPRequestOperationManager *instagramOperationManager;
+
 @end
 
 @implementation DataSource
@@ -41,7 +44,18 @@
         self = [super init];
         
         if (self) {
-            //[self addRandomData];
+            
+            NSURL *baseURL = [NSURL URLWithString:@"https://api.instagram.com/v1/"];
+            self.instagramOperationManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:baseURL];
+            
+            AFJSONResponseSerializer *jsonSerializer = [AFJSONResponseSerializer serializer];
+            
+            AFImageResponseSerializer *imageSerializer = [AFImageResponseSerializer serializer];
+            imageSerializer.imageScale = 1.0;
+            
+            AFCompoundResponseSerializer *serializer = [AFCompoundResponseSerializer compoundSerializerWithResponseSerializers:@[jsonSerializer, imageSerializer]];
+            self.instagramOperationManager.responseSerializer = serializer;
+            
             [self registerForAccessTokenNotification];
         }
         
