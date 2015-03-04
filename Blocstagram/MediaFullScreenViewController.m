@@ -67,7 +67,7 @@
                action:@selector(buttonClick:)
      forControlEvents:UIControlEventTouchUpInside];
     [button setTitle:@"Share" forState:UIControlStateNormal];
-    button.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
+    button.frame = CGRectMake(40.0, 0.0, 500.0, 40.0);
     [self.scrollView addSubview:button];
 }
 

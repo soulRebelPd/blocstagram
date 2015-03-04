@@ -12,6 +12,7 @@
 #import "Comment.h"
 #import "LoginViewController.h"
 #import <UICKeyChainStore.h>
+#import <AFNetworking/AFNetworking.h>
 
 @interface DataSource () {
     NSMutableArray *_mediaItems;
@@ -21,7 +22,7 @@
 @property (nonatomic, assign) BOOL isLoadingOlderItems;
 @property (nonatomic, strong) NSString *accessToken;
 @property (nonatomic, assign) BOOL thereAreNoMoreOlderMessages;
-//@property (nonatomic, strong) AFHTTPRequestOperationManager *instagramOperationManager;
+@property (nonatomic, strong) AFHTTPRequestOperationManager *instagramOperationManager;
 
 @end
 
