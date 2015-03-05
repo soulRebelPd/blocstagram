@@ -215,4 +215,32 @@
     [[DataSource sharedInstance] downloadImageForMediaItem:cell.mediaItem];
 }
 
+- (void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+//    Media *mediaItem = [DataSource sharedInstance].mediaItems[indexPath.row];
+//    if (mediaItem.downloadState == MediaDownloadStateNeedsImage) {
+//        [[DataSource sharedInstance] downloadImageForMediaItem:mediaItem];
+//    }
+}
+
+-(void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
+    //NSArray *visibleCells = self.tableView.visibleCells;
+    NSArray *visiblePaths = [self.tableView indexPathsForVisibleRows];
+    
+    for(NSIndexPath *path in visiblePaths)
+    {
+        Media *mediaItem = [DataSource sharedInstance].mediaItems[path.row];
+        
+        if (mediaItem.downloadState == MediaDownloadStateNeedsImage) {
+            [[DataSource sharedInstance] downloadImageForMediaItem:mediaItem];
+        }
+    }
+    
+    //UITableViewCell *genericCell = [visibleCells firstObject];
+    //MediaTableViewCell *mediaCell = [visiblePaths firstObject];
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    //[self infiniteScrollIfNecessary];
+}
+
 @end

@@ -13,12 +13,16 @@
 typedef void (^NewItemCompletionBlock)(NSError *error);
 
 @interface DataSource : NSObject
+
 + (instancetype) sharedInstance;
++ (NSString *) instagramClientID;
+
 - (void) deleteMediaItem:(Media *)item;
-@property (nonatomic, strong) NSArray *mediaItems;
- - (void) requestNewItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
- - (void) requestOldItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
- + (NSString *) instagramClientID;
- @property (nonatomic, strong, readonly) NSString *accessToken;
+- (void) requestNewItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
+- (void) requestOldItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
 - (void) downloadImageForMediaItem:(Media *)mediaItem;
+
+@property (nonatomic, strong, readonly) NSString *accessToken;
+@property (nonatomic, strong) NSArray *mediaItems;
+
 @end
