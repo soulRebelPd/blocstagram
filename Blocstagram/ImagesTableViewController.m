@@ -243,4 +243,9 @@
     //[self infiniteScrollIfNecessary];
 }
 
+- (void) cellDidPressLikeButton:(MediaTableViewCell *)cell {
+    [[DataSource sharedInstance] toggleLikeOnMediaItem:cell.mediaItem];
+}
+
+
 @end

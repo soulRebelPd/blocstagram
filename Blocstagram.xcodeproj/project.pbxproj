@@ -10,6 +10,14 @@
 		04781C031AA6608B002BEC5E /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04781C021AA6608B002BEC5E /* MediaFullScreenViewController.m */; };
 		04781C091AA670A0002BEC5E /* MediaFullScreenAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04781C081AA670A0002BEC5E /* MediaFullScreenAnimator.m */; };
 		04781C0C1AA79247002BEC5E /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04781C0B1AA79247002BEC5E /* ActivityViewController.m */; };
+		04781C131AA8BBDA002BEC5E /* angle-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 04781C0D1AA8BBDA002BEC5E /* angle-mask.png */; };
+		04781C141AA8BBDA002BEC5E /* angle-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04781C0E1AA8BBDA002BEC5E /* angle-mask@2x.png */; };
+		04781C151AA8BBDA002BEC5E /* heart-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 04781C0F1AA8BBDA002BEC5E /* heart-empty.png */; };
+		04781C161AA8BBDA002BEC5E /* heart-empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04781C101AA8BBDA002BEC5E /* heart-empty@2x.png */; };
+		04781C171AA8BBDA002BEC5E /* heart-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 04781C111AA8BBDA002BEC5E /* heart-full.png */; };
+		04781C181AA8BBDA002BEC5E /* heart-full@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04781C121AA8BBDA002BEC5E /* heart-full@2x.png */; };
+		04781C1B1AA8BC75002BEC5E /* CircleSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04781C1A1AA8BC75002BEC5E /* CircleSpinnerView.m */; };
+		04781C1E1AA8E6B3002BEC5E /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04781C1D1AA8E6B3002BEC5E /* LikeButton.m */; };
 		04ED7B5C1AA0B5BB00D36E0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7B5B1AA0B5BB00D36E0C /* main.m */; };
 		04ED7B5F1AA0B5BB00D36E0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7B5E1AA0B5BB00D36E0C /* AppDelegate.m */; };
 		04ED7B621AA0B5BB00D36E0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7B611AA0B5BB00D36E0C /* ViewController.m */; };
@@ -54,6 +62,16 @@
 		04781C081AA670A0002BEC5E /* MediaFullScreenAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenAnimator.m; sourceTree = "<group>"; };
 		04781C0A1AA79247002BEC5E /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
 		04781C0B1AA79247002BEC5E /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
+		04781C0D1AA8BBDA002BEC5E /* angle-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "angle-mask.png"; path = "../../../../Downloads/Like Button Resources/angle-mask.png"; sourceTree = "<group>"; };
+		04781C0E1AA8BBDA002BEC5E /* angle-mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "angle-mask@2x.png"; path = "../../../../Downloads/Like Button Resources/angle-mask@2x.png"; sourceTree = "<group>"; };
+		04781C0F1AA8BBDA002BEC5E /* heart-empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart-empty.png"; path = "../../../../Downloads/Like Button Resources/heart-empty.png"; sourceTree = "<group>"; };
+		04781C101AA8BBDA002BEC5E /* heart-empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart-empty@2x.png"; path = "../../../../Downloads/Like Button Resources/heart-empty@2x.png"; sourceTree = "<group>"; };
+		04781C111AA8BBDA002BEC5E /* heart-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart-full.png"; path = "../../../../Downloads/Like Button Resources/heart-full.png"; sourceTree = "<group>"; };
+		04781C121AA8BBDA002BEC5E /* heart-full@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart-full@2x.png"; path = "../../../../Downloads/Like Button Resources/heart-full@2x.png"; sourceTree = "<group>"; };
+		04781C191AA8BC75002BEC5E /* CircleSpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSpinnerView.h; sourceTree = "<group>"; };
+		04781C1A1AA8BC75002BEC5E /* CircleSpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSpinnerView.m; sourceTree = "<group>"; };
+		04781C1C1AA8E6B3002BEC5E /* LikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeButton.h; sourceTree = "<group>"; };
+		04781C1D1AA8E6B3002BEC5E /* LikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeButton.m; sourceTree = "<group>"; };
 		04ED7B561AA0B5BB00D36E0C /* Blocstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ED7B5A1AA0B5BB00D36E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04ED7B5B1AA0B5BB00D36E0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -154,6 +172,12 @@
 				04ED7B611AA0B5BB00D36E0C /* ViewController.m */,
 				04ED7B631AA0B5BB00D36E0C /* Main.storyboard */,
 				04ED7B661AA0B5BB00D36E0C /* Images.xcassets */,
+				04781C0D1AA8BBDA002BEC5E /* angle-mask.png */,
+				04781C0E1AA8BBDA002BEC5E /* angle-mask@2x.png */,
+				04781C0F1AA8BBDA002BEC5E /* heart-empty.png */,
+				04781C101AA8BBDA002BEC5E /* heart-empty@2x.png */,
+				04781C111AA8BBDA002BEC5E /* heart-full.png */,
+				04781C121AA8BBDA002BEC5E /* heart-full@2x.png */,
 				04ED7B681AA0B5BB00D36E0C /* LaunchScreen.xib */,
 				04ED7B591AA0B5BB00D36E0C /* Supporting Files */,
 				04ED7B7F1AA0B69000D36E0C /* ImagesTableViewController.h */,
@@ -176,6 +200,10 @@
 				04781C081AA670A0002BEC5E /* MediaFullScreenAnimator.m */,
 				04781C0A1AA79247002BEC5E /* ActivityViewController.h */,
 				04781C0B1AA79247002BEC5E /* ActivityViewController.m */,
+				04781C191AA8BC75002BEC5E /* CircleSpinnerView.h */,
+				04781C1A1AA8BC75002BEC5E /* CircleSpinnerView.m */,
+				04781C1C1AA8E6B3002BEC5E /* LikeButton.h */,
+				04781C1D1AA8E6B3002BEC5E /* LikeButton.m */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -315,15 +343,21 @@
 			files = (
 				04ED7B961AA0B6D100D36E0C /* 10.jpg in Resources */,
 				04ED7B941AA0B6D100D36E0C /* 8.jpg in Resources */,
+				04781C151AA8BBDA002BEC5E /* heart-empty.png in Resources */,
+				04781C161AA8BBDA002BEC5E /* heart-empty@2x.png in Resources */,
 				04ED7B921AA0B6D100D36E0C /* 6.jpg in Resources */,
 				04ED7B651AA0B5BB00D36E0C /* Main.storyboard in Resources */,
 				04ED7B911AA0B6D100D36E0C /* 5.jpg in Resources */,
+				04781C141AA8BBDA002BEC5E /* angle-mask@2x.png in Resources */,
+				04781C131AA8BBDA002BEC5E /* angle-mask.png in Resources */,
 				04ED7B901AA0B6D100D36E0C /* 4.jpg in Resources */,
 				04ED7B8D1AA0B6D100D36E0C /* 1.jpg in Resources */,
 				04ED7B8E1AA0B6D100D36E0C /* 2.jpg in Resources */,
 				04ED7B8F1AA0B6D100D36E0C /* 3.jpg in Resources */,
 				04ED7B931AA0B6D100D36E0C /* 7.jpg in Resources */,
 				04ED7B951AA0B6D100D36E0C /* 9.jpg in Resources */,
+				04781C181AA8BBDA002BEC5E /* heart-full@2x.png in Resources */,
+				04781C171AA8BBDA002BEC5E /* heart-full.png in Resources */,
 				04ED7B6A1AA0B5BB00D36E0C /* LaunchScreen.xib in Resources */,
 				04ED7B671AA0B5BB00D36E0C /* Images.xcassets in Resources */,
 			);
@@ -380,12 +414,14 @@
 				04ED7B9F1AA0CE3000D36E0C /* Media.m in Sources */,
 				04ED7BA81AA11E4600D36E0C /* MediaTableViewCell.m in Sources */,
 				04ED7BA51AA0D01D00D36E0C /* DataSource.m in Sources */,
+				04781C1B1AA8BC75002BEC5E /* CircleSpinnerView.m in Sources */,
 				04ED7BAB1AA5FAE900D36E0C /* LoginViewController.m in Sources */,
 				04ED7B9C1AA0CDEE00D36E0C /* User.m in Sources */,
 				04ED7B621AA0B5BB00D36E0C /* ViewController.m in Sources */,
 				04781C031AA6608B002BEC5E /* MediaFullScreenViewController.m in Sources */,
 				04ED7B5F1AA0B5BB00D36E0C /* AppDelegate.m in Sources */,
 				04781C0C1AA79247002BEC5E /* ActivityViewController.m in Sources */,
+				04781C1E1AA8E6B3002BEC5E /* LikeButton.m in Sources */,
 				04ED7B5C1AA0B5BB00D36E0C /* main.m in Sources */,
 				04781C091AA670A0002BEC5E /* MediaFullScreenAnimator.m in Sources */,
 				04ED7B811AA0B69000D36E0C /* ImagesTableViewController.m in Sources */,

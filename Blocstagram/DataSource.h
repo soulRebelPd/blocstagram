@@ -21,6 +21,7 @@ typedef void (^NewItemCompletionBlock)(NSError *error);
 - (void) requestNewItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
 - (void) requestOldItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
 - (void) downloadImageForMediaItem:(Media *)mediaItem;
+- (void) toggleLikeOnMediaItem:(Media *)mediaItem;
 
 @property (nonatomic, strong, readonly) NSString *accessToken;
 @property (nonatomic, strong) NSArray *mediaItems;
