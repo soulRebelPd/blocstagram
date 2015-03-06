@@ -42,6 +42,7 @@
     } else {
         ImagesTableViewController *imagesVC = [[ImagesTableViewController alloc] init];
         [navVC setViewControllers:@[imagesVC] animated:YES];
+        [[DataSource sharedInstance] requestNewItemsWithCompletionHandler:nil];
     }
     
     self.window.rootViewController = navVC;
