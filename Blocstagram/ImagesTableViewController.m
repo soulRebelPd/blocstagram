@@ -18,6 +18,9 @@
 @interface ImagesTableViewController () <MediaTableViewCellDelegate, UIViewControllerTransitioningDelegate>
 
 @property (nonatomic, weak) UIImageView *lastTappedImageView;
+@property (nonatomic, weak) UIView *lastSelectedCommentView;
+@property (nonatomic, assign) CGFloat lastKeyboardAdjustment;
+
 @end
 
 
@@ -41,6 +44,19 @@
     [self.refreshControl addTarget:self action:@selector(refreshControlDidFire:) forControlEvents:UIControlEventValueChanged];
     
     [self.tableView registerClass:[MediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
+    
+    
+    self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
 }
 
 -(void)deleteImage {
@@ -245,6 +261,59 @@
 
 - (void) cellDidPressLikeButton:(MediaTableViewCell *)cell {
     [[DataSource sharedInstance] toggleLikeOnMediaItem:cell.mediaItem];
+}
+
+#pragma mark - Keyboard Handling
+
+- (void)keyboardWillShow:(NSNotification *)notification
+{
+    // Get the frame of the keyboard within self.view's coordinate system
+    NSValue *frameValue = notification.userInfo[UIKeyboardFrameEndUserInfoKey];
+    CGRect keyboardFrameInScreenCoordinates = frameValue.CGRectValue;
+    CGRect keyboardFrameInViewCoordinates = [self.navigationController.view convertRect:keyboardFrameInScreenCoordinates fromView:nil];
+    
+    // Get the frame of the comment view in the same coordinate system
+    CGRect commentViewFrameInViewCoordinates = [self.navigationController.view convertRect:self.lastSelectedCommentView.bounds fromView:self.lastSelectedCommentView];
+    
+    CGPoint contentOffset = self.tableView.contentOffset;
+    UIEdgeInsets contentInsets = self.tableView.contentInset;
+    UIEdgeInsets scrollIndicatorInsets = self.tableView.scrollIndicatorInsets;
+    CGFloat heightToScroll = 0;
+    
+    CGFloat keyboardY = CGRectGetMinY(keyboardFrameInViewCoordinates);
+    CGFloat commentViewY = CGRectGetMinY(commentViewFrameInViewCoordinates);
+    CGFloat difference = commentViewY - keyboardY;
+    
+    if (difference > 0) {
+        heightToScroll += difference;
+    }
+    
+    if (CGRectIntersectsRect(keyboardFrameInViewCoordinates, commentViewFrameInViewCoordinates)) {
+        // The two frames intersect (the keyboard would block the view)
+        CGRect intersectionRect = CGRectIntersection(keyboardFrameInViewCoordinates, commentViewFrameInViewCoordinates);
+        heightToScroll += CGRectGetHeight(intersectionRect);
+    }
+    
+    if (heightToScroll > 0) {
+        contentInsets.bottom += heightToScroll;
+        scrollIndicatorInsets.bottom += heightToScroll;
+        contentOffset.y += heightToScroll;
+        
+        NSNumber *durationNumber = notification.userInfo[UIKeyboardAnimationDurationUserInfoKey];
+        NSNumber *curveNumber = notification.userInfo[UIKeyboardAnimationCurveUserInfoKey];
+        
+        NSTimeInterval duration = durationNumber.doubleValue;
+        UIViewAnimationCurve curve = curveNumber.unsignedIntegerValue;
+        UIViewAnimationOptions options = curve << 16;
+        
+        [UIView animateWithDuration:duration delay:0 options:options animations:^{
+            self.tableView.contentInset = contentInsets;
+            self.tableView.scrollIndicatorInsets = scrollIndicatorInsets;
+            self.tableView.contentOffset = contentOffset;
+        } completion:nil];
+    }
+    
+    self.lastKeyboardAdjustment = heightToScroll;
 }
 
 
