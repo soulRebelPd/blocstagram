@@ -139,11 +139,14 @@
 }
 
 - (MyCollectionViewCell*) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.filterCollectionView.collectionViewLayout;
+    MyCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    
     UIImage *image = self.filterImages[indexPath.row];
     NSString *title = self.filterTitles[indexPath.row];
+    
+    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.filterCollectionView.collectionViewLayout;
     CGFloat thumbnailEdgeSize = flowLayout.itemSize.width;
+    
     MyCollectionViewCell *myCell = [MyCollectionViewCell setup:cell image:image title:title thumbnailEdgeSize:thumbnailEdgeSize];
     
     return myCell;
@@ -313,6 +316,59 @@
             [self addCIImageToCollectionView:composite.outputImage withFilterTitle:NSLocalizedString(@"Film", @"Film Filter")];
         }
     }];
+    
+    // color inverted filter
+    
+    [self.photoFilterOperationQueue addOperationWithBlock:^{
+        CIFilter *colorInvert = [CIFilter filterWithName:@"CIColorInvert"];
+        
+        if (colorInvert) {
+            [colorInvert setValue:sourceCIImage forKey:kCIInputImageKey];
+            [self addCIImageToCollectionView:colorInvert.outputImage withFilterTitle:NSLocalizedString(@"ColorInvert", @"Color Invert")];
+        }
+    }];
+    
+    
+    // CIAffineClamp
+    
+    [self.photoFilterOperationQueue addOperationWithBlock:^{
+        CIFilter *affineClamp = [CIFilter filterWithName:@"CIBloom"];
+        
+        if (affineClamp) {
+            [affineClamp setValue:sourceCIImage forKey:kCIInputImageKey];
+            [self addCIImageToCollectionView:affineClamp.outputImage withFilterTitle:NSLocalizedString(@"Bloom", @"Bloom")];
+        }
+    }];
+    
+    // another compound filter
+    
+    [self.photoFilterOperationQueue addOperationWithBlock:^{
+        CIFilter *sepiaFilter = [CIFilter filterWithName:@"CIPhotoEffectProcess"];
+        [sepiaFilter setValue:sourceCIImage forKey:kCIInputImageKey];
+        CIImage *sepiaImage = sepiaFilter.outputImage;
+        
+        CIFilter *whiteSpecks = [CIFilter filterWithName:@"CIColorInvert"];
+        [whiteSpecks setValue:sourceCIImage forKey:kCIInputImageKey];
+        CIImage *whiteSpecksImage = [whiteSpecks.outputImage imageByCroppingToRect:sourceCIImage.extent];
+        
+        CIImage *randomImage = [CIFilter filterWithName:@"CIRandomGenerator"].outputImage;
+        
+        
+        CIFilter *minimumComponent = [CIFilter filterWithName:@"CIMinimumComponent"];
+        
+        CIFilter *composite = [CIFilter filterWithName:@"CIMultiplyCompositing"];
+        
+        CIImage *sepiaPlusWhiteSpecksImage = [CIFilter filterWithName:@"CISourceOverCompositing" keysAndValues:
+                                              kCIInputImageKey, whiteSpecksImage,
+                                              kCIInputBackgroundImageKey, sepiaImage,
+                                              nil].outputImage;
+        
+        [composite setValue:sepiaPlusWhiteSpecksImage forKey:kCIInputImageKey];
+        [composite setValue:sepiaPlusWhiteSpecksImage forKey:kCIInputBackgroundImageKey];
+        
+        [self addCIImageToCollectionView:composite.outputImage withFilterTitle:NSLocalizedString(@"Film2", @"Film Filter 2")];
+    }];
+
 }
 
 - (void) sendButtonPressed:(id)sender {

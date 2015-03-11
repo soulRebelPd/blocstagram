@@ -10,8 +10,7 @@
 
 @implementation MyCollectionViewCell
 
-+ (MyCollectionViewCell *)setup:(UICollectionViewCell *)cell image:(UIImage *)image title:(NSString *)title thumbnailEdgeSize:(CGFloat)thumbnailEdgeSize{
-    MyCollectionViewCell *thisCell = [[MyCollectionViewCell alloc] init];
++ (MyCollectionViewCell *)setup:(MyCollectionViewCell *)cell image:(UIImage *)image title:(NSString *)title thumbnailEdgeSize:(CGFloat)thumbnailEdgeSize{
     
     //can simply pass in contentView likely
     static NSInteger imageViewTag = 1000;
@@ -28,7 +27,7 @@
         thumbnail.tag = imageViewTag;
         thumbnail.clipsToBounds = YES;
         
-        [thisCell.contentView addSubview:thumbnail];
+        [cell.contentView addSubview:thumbnail];
     }
     
     if (!label) {
@@ -36,14 +35,13 @@
         label.tag = labelTag;
         label.textAlignment = NSTextAlignmentCenter;
         label.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:10];
-        [thisCell.contentView addSubview:label];
+        [cell.contentView addSubview:label];
     }
     
     thumbnail.image = image;
     label.text = title;
     
-
-    return thisCell;
+    return cell;
 }
 
 @end
