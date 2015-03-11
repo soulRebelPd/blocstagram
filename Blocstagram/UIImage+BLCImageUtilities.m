@@ -141,7 +141,8 @@
 }
 
 - (UIImage *) imageByScalingToSize:(CGSize)size andCroppingWithRect:(CGRect)rect{
-    
+    [self imageResizedToMatchAspectRatioOfSize:size];
+    [self imageCroppedToRect:rect];
     return nil;
 }
 
