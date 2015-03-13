@@ -1,19 +1,19 @@
 //
-//  BlocstagramTests.m
-//  BlocstagramTests
+//  MediaTests.m
+//  Blocstagram
 //
-//  Created by Corey Norford on 2/27/15.
+//  Created by Corey Norford on 3/12/15.
 //  Copyright (c) 2015 Bloc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "Media.h"
 
-@interface BlocstagramTests : XCTestCase
-
+@interface MediaTests : XCTestCase
 @end
 
-@implementation BlocstagramTests
+@implementation MediaTests
 
 - (void)setUp {
     [super setUp];
@@ -35,6 +35,14 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+- (void)testThatInitializationWorks{
+    NSDictionary *sourceDictionary = @{@"id": @"8675309"};
+    
+    Media *testMedia = [[Media alloc] initWithDictionary:sourceDictionary];
+    
+    XCTAssertEqualObjects(testMedia.idNumber, sourceDictionary[@"id"], @"The ID number should be equal");
 }
 
 @end
