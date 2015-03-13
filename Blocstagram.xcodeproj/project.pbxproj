@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0461E4591AB0C8FD00AA5779 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461E4581AB0C8FD00AA5779 /* MyCollectionViewCell.m */; };
+		0461E45B1AB208C500AA5779 /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461E45A1AB208C500AA5779 /* UserTests.m */; };
+		0461E45D1AB20C6200AA5779 /* CommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461E45C1AB20C6200AA5779 /* CommentTests.m */; };
+		0461E45F1AB20FFF00AA5779 /* MediaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461E45E1AB20FFF00AA5779 /* MediaTests.m */; };
+		0461E4611AB2236300AA5779 /* ComposeCommentViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461E4601AB2236300AA5779 /* ComposeCommentViewTests.m */; };
+		0461E4631AB224C700AA5779 /* MediaTableViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461E4621AB224C700AA5779 /* MediaTableViewCellTests.m */; };
 		04781C031AA6608B002BEC5E /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04781C021AA6608B002BEC5E /* MediaFullScreenViewController.m */; };
 		04781C091AA670A0002BEC5E /* MediaFullScreenAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04781C081AA670A0002BEC5E /* MediaFullScreenAnimator.m */; };
 		04781C0C1AA79247002BEC5E /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04781C0B1AA79247002BEC5E /* ActivityViewController.m */; };
@@ -26,7 +31,6 @@
 		04ED7B651AA0B5BB00D36E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ED7B631AA0B5BB00D36E0C /* Main.storyboard */; };
 		04ED7B671AA0B5BB00D36E0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ED7B661AA0B5BB00D36E0C /* Images.xcassets */; };
 		04ED7B6A1AA0B5BB00D36E0C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04ED7B681AA0B5BB00D36E0C /* LaunchScreen.xib */; };
-		04ED7B761AA0B5BB00D36E0C /* BlocstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7B751AA0B5BB00D36E0C /* BlocstagramTests.m */; };
 		04ED7B811AA0B69000D36E0C /* ImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7B801AA0B69000D36E0C /* ImagesTableViewController.m */; };
 		04ED7B9C1AA0CDEE00D36E0C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7B9B1AA0CDEE00D36E0C /* User.m */; };
 		04ED7B9F1AA0CE3000D36E0C /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED7B9E1AA0CE3000D36E0C /* Media.m */; };
@@ -50,6 +54,11 @@
 /* Begin PBXFileReference section */
 		0461E4571AB0C8FD00AA5779 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		0461E4581AB0C8FD00AA5779 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		0461E45A1AB208C500AA5779 /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
+		0461E45C1AB20C6200AA5779 /* CommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTests.m; sourceTree = "<group>"; };
+		0461E45E1AB20FFF00AA5779 /* MediaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTests.m; sourceTree = "<group>"; };
+		0461E4601AB2236300AA5779 /* ComposeCommentViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentViewTests.m; sourceTree = "<group>"; };
+		0461E4621AB224C700AA5779 /* MediaTableViewCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCellTests.m; sourceTree = "<group>"; };
 		046AC9061AB078AC00F3C9B7 /* Blocstagram-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blocstagram-Prefix.pch"; sourceTree = "<group>"; };
 		04781C011AA6608B002BEC5E /* MediaFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFullScreenViewController.h; sourceTree = "<group>"; };
 		04781C021AA6608B002BEC5E /* MediaFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFullScreenViewController.m; sourceTree = "<group>"; };
@@ -87,7 +96,6 @@
 		04ED7B691AA0B5BB00D36E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04ED7B6F1AA0B5BB00D36E0C /* BlocstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ED7B741AA0B5BB00D36E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04ED7B751AA0B5BB00D36E0C /* BlocstagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocstagramTests.m; sourceTree = "<group>"; };
 		04ED7B7F1AA0B69000D36E0C /* ImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesTableViewController.h; sourceTree = "<group>"; };
 		04ED7B801AA0B69000D36E0C /* ImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesTableViewController.m; sourceTree = "<group>"; };
 		04ED7B9A1AA0CDEE00D36E0C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -223,8 +231,12 @@
 		04ED7B721AA0B5BB00D36E0C /* BlocstagramTests */ = {
 			isa = PBXGroup;
 			children = (
-				04ED7B751AA0B5BB00D36E0C /* BlocstagramTests.m */,
 				04ED7B731AA0B5BB00D36E0C /* Supporting Files */,
+				0461E45A1AB208C500AA5779 /* UserTests.m */,
+				0461E45C1AB20C6200AA5779 /* CommentTests.m */,
+				0461E45E1AB20FFF00AA5779 /* MediaTests.m */,
+				0461E4601AB2236300AA5779 /* ComposeCommentViewTests.m */,
+				0461E4621AB224C700AA5779 /* MediaTableViewCellTests.m */,
 			);
 			path = BlocstagramTests;
 			sourceTree = "<group>";
@@ -410,7 +422,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04ED7B761AA0B5BB00D36E0C /* BlocstagramTests.m in Sources */,
+				0461E45F1AB20FFF00AA5779 /* MediaTests.m in Sources */,
+				0461E45B1AB208C500AA5779 /* UserTests.m in Sources */,
+				0461E45D1AB20C6200AA5779 /* CommentTests.m in Sources */,
+				0461E4631AB224C700AA5779 /* MediaTableViewCellTests.m in Sources */,
+				0461E4611AB2236300AA5779 /* ComposeCommentViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

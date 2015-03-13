@@ -175,6 +175,10 @@ static NSParagraphStyle *paragraphStyle;
 }
 
 + (CGFloat) heightForMediaItem:(Media *)mediaItem width:(CGFloat)width {
+    if(width == 100)
+    {
+        NSNumber *test = @100;
+    }
     // Make a cell
     MediaTableViewCell *layoutCell = [[MediaTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"layoutCell"];
     
