@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageLibraryViewController.m"
-            timestampString = "447706542.421376"
+            filePath = "BlocstagramTests/ComposeCommentViewTests.m"
+            timestampString = "447882214.576927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
-            landmarkName = "-collectionView:layout:sizeForItemAtIndexPath:"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-testSetText"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Blocstagram/MediaFullScreenViewController.m"
-            timestampString = "447775751.508503"
+            filePath = "BlocstagramTests/MediaTableViewCellTests.m"
+            timestampString = "447951522.180497"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
-            landmarkName = "-tapBehindFired:"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "-testHeightForMediaItem"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,87 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Blocstagram/MediaFullScreenViewController.m"
-            timestampString = "447775801.232604"
+            filePath = "BlocstagramTests/MediaTableViewCellTests.m"
+            timestampString = "447951522.180497"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "-testHeightForMediaItem"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MediaTableViewCellTests testHeightForMediaItem]"
+                  moduleName = "BlocstagramTests"
+                  urlString = "file:///Users/Corey/Desktop/Blocstagram2/Blocstagram/BlocstagramTests/MediaTableViewCellTests.m"
+                  timestampString = "447950994.887191"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MediaTableViewCellTests testHeightForMediaItem]"
+                  moduleName = "BlocstagramTests"
+                  urlString = "file:///Users/Corey/Desktop/Blocstagram2/Blocstagram/BlocstagramTests/MediaTableViewCellTests.m"
+                  timestampString = "447950994.887473"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MediaTableViewCellTests testHeightForMediaItem]"
+                  moduleName = "BlocstagramTests"
+                  urlString = "file:///Users/Corey/Desktop/Blocstagram2/Blocstagram/BlocstagramTests/MediaTableViewCellTests.m"
+                  timestampString = "447950994.887639"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1220">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MediaTableViewCellTests testHeightForMediaItem]"
+                  moduleName = "BlocstagramTests"
+                  urlString = "file:///Users/Corey/Desktop/Blocstagram2/Blocstagram/BlocstagramTests/MediaTableViewCellTests.m"
+                  timestampString = "447950994.887816"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1646">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlocstagramTests/MediaTableViewCellTests.m"
+            timestampString = "447951522.180497"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "-testHeightForMediaItem"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +131,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Blocstagram/MediaFullScreenViewController.m"
-            timestampString = "447775916.898006"
+            filePath = "Blocstagram/MediaTableViewCell.m"
+            timestampString = "447951208.59929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "-viewWillAppear:"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "+heightForMediaItem:width:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Blocstagram/MediaTableViewCell.m"
+            timestampString = "447951208.59929"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "+heightForMediaItem:width:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,13 +163,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Blocstagram/PostToInstagramViewController.m"
-            timestampString = "447800253.576627"
+            filePath = "Blocstagram/MediaTableViewCell.m"
+            timestampString = "447951193.794468"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "435"
-            endingLineNumber = "435"
-            landmarkName = "-willAnimateRotationToInterfaceOrientation:duration:"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "+heightForMediaItem:width:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -89,75 +179,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Blocstagram/LoginViewController.m"
-            timestampString = "447784809.942403"
+            filePath = "Blocstagram/MediaTableViewCell.m"
+            timestampString = "447951350.166376"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "-loadView"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Blocstagram/ImagesTableViewController.m"
-            timestampString = "447786188.704185"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "460"
-            endingLineNumber = "460"
-            landmarkName = "-willAnimateRotationToInterfaceOrientation:duration:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Blocstagram/MyCollectionViewCell.m"
-            timestampString = "447796808.93572"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Blocstagram/PostToInstagramViewController.m"
-            timestampString = "447796538.905256"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "-collectionView:cellForItemAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Blocstagram/PostToInstagramViewController.m"
-            timestampString = "447796538.905256"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
-            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "-setMediaItem:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
